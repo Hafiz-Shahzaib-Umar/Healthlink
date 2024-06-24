@@ -67,6 +67,22 @@ function SignUp() {
                     />
                   </div>
                 </div>
+                <div className="col-lg-12">
+                  <div className="form-group">
+                    <select style={{ display: "none" }}>
+                      <option value="Patient">Patient</option>
+                      <option value="Doctor">Doctor</option>
+                    </select>
+
+                    <div className="nice-select" tabindex="0">
+                      <span className="current">Select Category</span>
+                      <ul className="list">
+                        <li className="option selected">Patient</li>
+                        <li className="option">Doctor</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="col-lg-12">
                   <div className="form-check">

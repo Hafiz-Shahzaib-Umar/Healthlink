@@ -1,5 +1,5 @@
 import React from "react";
-// import "./GoalsSection.css";
+import { Link } from "react-router-dom";
 
 function GoalsSection() {
   return (
@@ -41,15 +41,16 @@ function GoalsSection() {
                     <li>Provide support for self-management of health care.</li>
                   </ul>
                   <div className="goal-btn">
-                    <a
-                      href="https://www.youtube.com/watch?v=cOT6DjgER2Y"
+                    <Link
+                      to="https://www.youtube.com/watch?v=cOT6DjgER2Y"
+                      target="_blank"
                       className="default-btn popup-youtube"
                     >
                       Watch Live Video
                       <span
                         style={{ top: "29.3594px", left: "100.5px" }}
                       ></span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

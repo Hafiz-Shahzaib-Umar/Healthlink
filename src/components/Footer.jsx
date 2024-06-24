@@ -43,7 +43,11 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://www.instagram.com/" className="instagram">
+                    <Link
+                      to="https://www.instagram.com/"
+                      target="_blank"
+                      className="instagram"
+                    >
                       <i className="fab fa-instagram"></i>
                     </Link>
                   </li>

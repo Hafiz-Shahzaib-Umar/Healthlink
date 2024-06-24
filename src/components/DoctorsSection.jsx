@@ -59,6 +59,7 @@ function Doctors() {
                     <li>
                       <Link
                         to="https://www.instagram.com/"
+                        target="_blank"
                         className="instagram"
                       >
                         <i className="fab fa-instagram"></i>
@@ -109,6 +110,7 @@ function Doctors() {
                     <li>
                       <Link
                         to="https://www.instagram.com/"
+                        target="_blank"
                         className="instagram"
                       >
                         <i className="fab fa-instagram"></i>
@@ -159,6 +161,7 @@ function Doctors() {
                     <li>
                       <Link
                         to="https://www.instagram.com/"
+                        target="_blank"
                         className="instagram"
                       >
                         <i className="fab fa-instagram"></i>
@@ -209,6 +212,7 @@ function Doctors() {
                     <li>
                       <Link
                         to="https://www.instagram.com/"
+                        target="_blank"
                         className="instagram"
                       >
                         <i className="fab fa-instagram"></i>
