@@ -1019,10 +1019,7 @@ Doctor Details Area CSS
   font-size: 24px;
   font-weight: 700;
 }
-.product-details-desc .price .old-price {
-  text-decoration: line-through;
-  color: #828893;
-}
+
 .product-details-desc .product-review {
   margin-bottom: 15px;
 }

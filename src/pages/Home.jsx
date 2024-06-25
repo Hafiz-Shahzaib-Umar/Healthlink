@@ -19,32 +19,30 @@ function Home() {
 
       {/* Start Main Banner Area */}
       <div className="main-banner">
-        <div className="d-table">
-          <div className="d-table-cell">
-            <div className="container-fluid">
-              <div className="row d-flex align-items-center justify-content-start">
-                <div className="col-sm-12 col-md-12 col-lg-8 col-8">
-                  <div className="main-banner-content">
-                    <h1>
-                      TeleHealth Services Rapid Response to Coronavirus Pandemic
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse.
-                    </p>
-                    <div className="banner-btn">
-                      <Link to="/appointment" className="default-btn">
-                        Make An Appointment
-                        <span></span>
-                      </Link>
-                    </div>
-                  </div>
+        <div className="container">
+          <div className="row align-items-center justify-content-center">
+            <div className=" col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+              <div className="main-banner-content">
+                <h1>
+                  TeleHealth Services Rapid Response to Coronavirus Pandemic
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse.
+                </p>
+                <div className="banner-btn">
+                  <Link to="/appointment" className="default-btn">
+                    Make An Appointment
+                    <span></span>
+                  </Link>
                 </div>
+              </div>
+            </div>
 
-                <div className="col-sm-12 col-md-12 col-lg-4 col-4 banner-img">
-                  <img src="src\assets\images\doctor.png" alt="image" />
-                </div>
+            <div className=" col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+              <div className="banner-img">
+                <img src="src\assets\images\doctor.png" alt="image" />
               </div>
             </div>
           </div>
@@ -114,6 +112,32 @@ function Home() {
       {/* Start Footer Area  */}
       <Footer />
       {/* End Footer Area */}
+
+      {/* <div className="container">
+        <div className="row">
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div className="main-banner-content">
+              <h1>
+                TeleHealth Services Rapid Response to Coronavirus Pandemic
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse.
+              </p>
+              <div className="banner-btn">
+                <Link to="/appointment" className="default-btn">
+                  Make An Appointment
+                  <span></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <img src="src\assets\images\doctor.png" alt="image" />
+          </div>
+        </div>
+      </div> */}
     </>
   );
 }
