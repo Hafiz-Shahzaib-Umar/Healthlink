@@ -87,7 +87,7 @@ function Header() {
         <div className="navbar-area is-sticky">
           <div className="main-navbar">
             <div className="container-fluid">
-              <nav className="navbar navbar-expand-md navbar-light">
+              <nav className="navbar navbar-expand-lg navbar-light">
                 <Link to="/">
                   <img
                     src="src\assets\images\logo.png"
@@ -95,50 +95,55 @@ function Header() {
                     alt="image"
                   />
                 </Link>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
 
                 <div
-                  className="collapse navbar-collapse mean-menu"
+                  className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                   style={{ display: "block" }}
                 >
-                  <ul className="navbar-nav">
-                    <li className="nav-item">
+                  <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
                       <Link to="/" className="nav-link active">
                         Home
                       </Link>
                     </li>
-
                     <li className="nav-item">
                       <Link to="/about" className="nav-link">
                         About
                       </Link>
                     </li>
-
                     <li className="nav-item">
                       <Link to="/services" className="nav-link">
                         Services
                       </Link>
                     </li>
-
                     <li className="nav-item">
                       <Link to="/doctors" className="nav-link">
                         Doctors
                       </Link>
                     </li>
-
                     <li className="nav-item">
                       <Link to="/blogs" className="nav-link">
                         Health Blog
                       </Link>
                     </li>
-
                     <li className="nav-item">
                       <Link to="/contact" className="nav-link">
                         Contact
                       </Link>
                     </li>
                   </ul>
-
                   <div className="others-options">
                     <Link to="/appointment" className="default-btn-two">
                       Get a Quote

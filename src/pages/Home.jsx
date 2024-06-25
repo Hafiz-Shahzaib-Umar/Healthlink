@@ -22,8 +22,8 @@ function Home() {
         <div className="d-table">
           <div className="d-table-cell">
             <div className="container-fluid">
-              <div className="row align-items-center justify-content-center">
-                <div className="col-lg-7">
+              <div className="row d-flex align-items-center justify-content-start">
+                <div className="col-sm-12 col-md-12 col-lg-8 col-8">
                   <div className="main-banner-content">
                     <h1>
                       TeleHealth Services Rapid Response to Coronavirus Pandemic
@@ -33,111 +33,6 @@ function Home() {
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Quis ipsum suspendisse.
                     </p>
-                    <div className="banner-form">
-                      <form>
-                        <div className="row align-items-center justify-content-center">
-                          <div className="col-lg-3 col-md-6">
-                            <div className="form-group">
-                              <select style={{ display: "none" }}>
-                                <option>Specialist</option>
-                                <option value="">Dr. James Adult</option>
-                                <option value="">Dr. James Alison</option>
-                                <option value="">Dr. Peter Adlock</option>
-                              </select>
-                              <div className="nice-select" tabindex="0">
-                                <span className="current">Specialist</span>
-                                <ul className="list">
-                                  <li
-                                    data-value="Specialist"
-                                    className="option selected"
-                                  >
-                                    Specialist
-                                  </li>
-                                  <li data-value="" className="option">
-                                    Dr. James Adult
-                                  </li>
-                                  <li data-value="" className="option">
-                                    Dr. James Alison
-                                  </li>
-                                  <li data-value="" className="option">
-                                    Dr. Peter Adlock
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-lg-3 col-md-6">
-                            <div className="form-group">
-                              <select style={{ display: "none" }}>
-                                <option>Category</option>
-                                <option value="">Cardiologists</option>
-                                <option value="">Dermatologists</option>
-                                <option value="">Endocrinologists</option>
-                              </select>
-                              <div className="nice-select" tabindex="0">
-                                <span className="current">Category</span>
-                                <ul className="list">
-                                  <li
-                                    data-value="Category"
-                                    className="option selected"
-                                  >
-                                    Category
-                                  </li>
-                                  <li data-value="" className="option">
-                                    Cardiologists
-                                  </li>
-                                  <li data-value="" className="option">
-                                    Dermatologists
-                                  </li>
-                                  <li data-value="" className="option">
-                                    Endocrinologists
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-lg-3 col-md-6">
-                            <div className="form-group">
-                              <select style={{ display: "none" }}>
-                                <option>Condition</option>
-                                <option>Fever</option>
-                                <option>Allergies</option>
-                                <option>Morbidity</option>
-                              </select>
-                              <div className="nice-select" tabindex="0">
-                                <span className="current">Condition</span>
-                                <ul className="list">
-                                  <li
-                                    data-value="Condition"
-                                    className="option selected"
-                                  >
-                                    Condition
-                                  </li>
-                                  <li data-value="Fever" className="option">
-                                    Fever
-                                  </li>
-                                  <li data-value="Allergies" className="option">
-                                    Allergies
-                                  </li>
-                                  <li data-value="Morbidity" className="option">
-                                    Morbidity
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-lg-3 col-md-6">
-                            <div className="form-group">
-                              <button type="submit" className="banner-form-btn">
-                                Search
-                                <i className="fa fa-search"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-
                     <div className="banner-btn">
                       <Link to="/appointment" className="default-btn">
                         Make An Appointment
@@ -147,10 +42,8 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="col-lg-5">
-                  <div className="banner-img ">
-                    <img src="src\assets\images\doctor.png" alt="image" />
-                  </div>
+                <div className="col-sm-12 col-md-12 col-lg-4 col-4 banner-img">
+                  <img src="src\assets\images\doctor.png" alt="image" />
                 </div>
               </div>
             </div>

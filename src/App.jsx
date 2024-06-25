@@ -15,6 +15,7 @@ import Appointment from "./pages/Appointment.jsx";
 import Testimonials from "./pages/Testimonials.jsx";
 import TermsAndConditions from "./pages/TermsAndConditions.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import DoctorDetails from "./pages/DoctorDetails.jsx";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/error" exact element={<Error />} />
           <Route path="/doctors" exact element={<Doctors />} />
+          <Route path="/doctor-details" exact element={<DoctorDetails />} />
           <Route path="/faq" exact element={<FAQ />} />
           <Route path="/appointment" exact element={<Appointment />} />
           <Route path="/testimonials" exact element={<Testimonials />} />
@@ -39,7 +41,6 @@ function App() {
             element={<TermsAndConditions />}
           />
           <Route path="/privacy-policy" exact element={<PrivacyPolicy />} />
-
           <Route path="/signin" exact element={<SignIn />} />
           <Route path="/signup" exact element={<SignUp />} />
         </Routes>

@@ -22,7 +22,9 @@ function Doctors() {
             <div className="col-lg-3 col-md-6">
               <div className="doctor-item">
                 <div className="image">
-                  <img src="src\assets\images\image1.jpg" alt="image" />
+                  <Link to="/doctor-details" target="_blank">
+                    <img src="src\assets\images\image1.jpg" alt="image" />
+                  </Link>
                 </div>
                 <div className="content">
                   <h3>Dr. James Adult</h3>
@@ -73,7 +75,9 @@ function Doctors() {
             <div className="col-lg-3 col-md-6">
               <div className="doctor-item">
                 <div className="image">
-                  <img src="src\assets\images\image2.jpg" alt="image" />
+                  <Link to="/doctor-details" target="_blank">
+                    <img src="src\assets\images\image2.jpg" alt="image" />
+                  </Link>
                 </div>
                 <div className="content">
                   <h3>Dr. James Alison</h3>
@@ -124,7 +128,9 @@ function Doctors() {
             <div className="col-lg-3 col-md-6">
               <div className="doctor-item">
                 <div className="image">
-                  <img src="src\assets\images\image3.jpg" alt="image" />
+                  <Link to="/doctor-details" target="_blank">
+                    <img src="src\assets\images\image3.jpg" alt="image" />
+                  </Link>
                 </div>
                 <div className="content">
                   <h3>Dr. Peter Adlock</h3>
@@ -175,7 +181,9 @@ function Doctors() {
             <div className="col-lg-3 col-md-6">
               <div className="doctor-item">
                 <div className="image">
-                  <img src="src\assets\images\image4.jpg" alt="image" />
+                  <Link to="/doctor-details" target="_blank">
+                    <img src="src\assets\images\image4.jpg" alt="image" />
+                  </Link>
                 </div>
                 <div className="content">
                   <h3>Dr. Jelin Alis</h3>

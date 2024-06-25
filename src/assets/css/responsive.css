@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .pb-70 {
     padding-bottom: 20px;
   }
@@ -72,6 +72,7 @@
     margin-top: 0;
     max-width: 100%;
     text-align: center;
+    
   }
   .main-banner .main-banner-content h1 {
     font-size: 26px;
@@ -87,10 +88,11 @@
     text-align: center;
   }
   .banner-image img {
-    max-width: 100%;
+    max-width: 50%;
   }
   .default-shape {
     display: none;
+    
   }
   .video-btn {
     left: 0;
@@ -1282,4 +1284,4 @@
     font-size: 15px;
     font-weight: 500;
   }
-}/*# sourceMappingURL=responsive.css.map */
+}
