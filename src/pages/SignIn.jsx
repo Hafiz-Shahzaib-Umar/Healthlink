@@ -39,16 +39,16 @@ function SignIn() {
         throw new Error(result.message);
       }
 
-      dispatch({
-        type: "LOGIN_SUCCESS",
-        payload: {
-          user: result.data,
-          token: result.token,
-          role: result.role,
-        },
-      });
+      // dispatch({
+      //   type: "LOGIN_SUCCESS",
+      //   payload: {
+      //     user: result.data,
+      //     token: result.token,
+      //     role: result.role,
+      //   },
+      // });
 
-      console.log(ressult, "Login Data");
+      console.log(result, "Login Data");
 
       setLoading(false);
 
