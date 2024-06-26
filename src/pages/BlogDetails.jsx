@@ -73,27 +73,28 @@ function BlogDetails() {
                   <div className="col-lg-6">
                     <div className="details-features">
                       <li>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i className="fa-regular fa-square-check"></i>
                         We see the full you - mind and body
                       </li>
                       <li>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i className="fa-regular fa-square-check"></i>
                         Urgent care
                       </li>
                       <li>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i className="fa-regular fa-square-check"></i>
                         Behaviour health
                       </li>
                       <li>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i className="fa-regular fa-square-check"></i>
                         Preventive health
                       </li>
                       <li>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i className="fa-regular fa-square-check"></i>
                         How to protect your home from germ
                       </li>
                       <li>
-                        <i class="fa-regular fa-square-check"></i>Chronic Care
+                        <i className="fa-regular fa-square-check"></i>Chronic
+                        Care
                       </li>
                     </div>
                   </div>

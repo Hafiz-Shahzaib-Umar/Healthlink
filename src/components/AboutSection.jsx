@@ -27,37 +27,37 @@ function About() {
                 <ul className="about-features two">
                   <li>
                     <span>
-                      <i class="fa fa-user"></i>
+                      <i className="fa fa-user"></i>
                       Orthopedic Solutions
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i class="fa fa-disease"></i>
+                      <i className="fa fa-disease"></i>
                       Chronic Disease
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i class="fa fa-vial-virus"></i>
+                      <i className="fa fa-vial-virus"></i>
                       COVID-19 Test
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i class="fa-solid fa-flask-vial"></i>
+                      <i className="fa-solid fa-flask-vial"></i>
                       Diabetic Test
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i class="fa-solid fa-people-group"></i>
+                      <i className="fa-solid fa-people-group"></i>
                       Family Solutions
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i class="fa-solid fa-clipboard-question"></i>
+                      <i className="fa-solid fa-clipboard-question"></i>
                       Medical Questions
                     </span>
                   </li>

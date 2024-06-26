@@ -32,12 +32,12 @@ function Contact() {
 
       {/* Start Contact Area */}
 
-      <section class="contact-area ptb-100">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="contact-info-box">
-                <div class="icon">
+      <section className="contact-area ptb-100">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="contact-info-box">
+                <div className="icon">
                   <i
                     className="fa-solid fa-envelope"
                     style={{ fontSize: "28px" }}
@@ -54,9 +54,9 @@ function Contact() {
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="contact-info-box">
-                <div class="icon">
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="contact-info-box">
+                <div className="icon">
                   <i
                     className="fa-solid fa-location-dot"
                     style={{ fontSize: "28px" }}
@@ -70,9 +70,9 @@ function Contact() {
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6   ">
-              <div class="contact-info-box">
-                <div class="icon">
+            <div className="col-lg-4 col-md-6 col-sm-6   ">
+              <div className="contact-info-box">
+                <div className="icon">
                   <i
                     className="fa-solid fa-phone"
                     style={{ fontSize: "28px" }}
@@ -90,7 +90,7 @@ function Contact() {
             </div>
           </div>
 
-          <div class="section-title">
+          <div className="section-title">
             <span>Contact Us</span>
             <h2>Drop us Message for any Query</h2>
             <p>
@@ -99,74 +99,74 @@ function Contact() {
             </p>
           </div>
 
-          <div class="contact-form">
+          <div className="contact-form">
             <form id="contactForm" novalidate="true">
-              <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-12">
-                  <div class="form-group">
+              <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-12">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="name"
                       id="name"
-                      class="form-control"
+                      className="form-control"
                       required=""
                       data-error="Please enter your name"
                       placeholder="Name"
                     />
-                    <div class="help-block with-errors"></div>
+                    <div className="help-block with-errors"></div>
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12">
-                  <div class="form-group">
+                <div className="col-lg-6 col-md-12">
+                  <div className="form-group">
                     <input
                       type="email"
                       name="email"
                       id="email"
-                      class="form-control"
+                      className="form-control"
                       required=""
                       data-error="Please enter your email"
                       placeholder="Email"
                     />
-                    <div class="help-block with-errors"></div>
+                    <div className="help-block with-errors"></div>
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12">
-                  <div class="form-group">
+                <div className="col-lg-6 col-md-12">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="phone_number"
                       id="phone_number"
                       required=""
                       data-error="Please enter your number"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Phone"
                     />
-                    <div class="help-block with-errors"></div>
+                    <div className="help-block with-errors"></div>
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12">
-                  <div class="form-group">
+                <div className="col-lg-6 col-md-12">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="msg_subject"
                       id="msg_subject"
-                      class="form-control"
+                      className="form-control"
                       required=""
                       data-error="Please enter your subject"
                       placeholder="Subject"
                     />
-                    <div class="help-block with-errors"></div>
+                    <div className="help-block with-errors"></div>
                   </div>
                 </div>
 
-                <div class="col-lg-12 col-md-12">
-                  <div class="form-group">
+                <div className="col-lg-12 col-md-12">
+                  <div className="form-group">
                     <textarea
                       name="message"
-                      class="form-control"
+                      className="form-control"
                       id="message"
                       cols="30"
                       rows="5"
@@ -174,17 +174,17 @@ function Contact() {
                       data-error="Write your message"
                       placeholder="Your Message"
                     ></textarea>
-                    <div class="help-block with-errors"></div>
+                    <div className="help-block with-errors"></div>
                   </div>
                 </div>
 
-                <div class="col-lg-12 col-md-12">
-                  <button type="submit" class="default-btn disabled">
+                <div className="col-lg-12 col-md-12">
+                  <button type="submit" className="default-btn disabled">
                     Send Message
                     <span></span>
                   </button>
-                  <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  <div class="clearfix"></div>
+                  <div id="msgSubmit" className="h3 text-center hidden"></div>
+                  <div className="clearfix"></div>
                 </div>
               </div>
             </form>

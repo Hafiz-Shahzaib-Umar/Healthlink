@@ -235,7 +235,7 @@ function Appointment() {
                           id="Name"
                           placeholder="Enter Your Name"
                         />
-                        <i class="fa-solid fa-user"></i>
+                        <i className="fa-solid fa-user"></i>
                       </div>
                     </div>
 
@@ -247,7 +247,7 @@ function Appointment() {
                           id="Email"
                           placeholder="Enter Email"
                         />
-                        <i class="fa-solid fa-envelope"></i>
+                        <i className="fa-solid fa-envelope"></i>
                       </div>
                     </div>
 
@@ -259,7 +259,7 @@ function Appointment() {
                           id="Phone"
                           placeholder="Enter Phone Number"
                         />
-                        <i class="fa-solid fa-phone"></i>
+                        <i className="fa-solid fa-phone"></i>
                       </div>
                     </div>
 
@@ -274,7 +274,7 @@ function Appointment() {
                           <option value="">Allergists</option>
                           <option value="">Immunologists</option>
                         </select>
-                        <div className="nice-select" tabindex="0">
+                        <div className="nice-select" tabIndex="0">
                           <span className="current">Select Category</span>
                           <ul className="list">
                             <li data-value="" className="option selected">
@@ -314,7 +314,7 @@ function Appointment() {
                           <option value="">Dr. Josh Taylor</option>
                           <option value="">Dr. Steven Smith</option>
                         </select>
-                        <div className="nice-select" tabindex="0">
+                        <div className="nice-select" tabIndex="0">
                           <span className="current">Select Doctor</span>
                           <ul className="list">
                             <li data-value="" className="option selected">
@@ -354,7 +354,7 @@ function Appointment() {
                           />
                           <span className="input-group-addon"></span>
                         </div>
-                        <i class="fa-solid fa-calendar-days"></i>
+                        <i className="fa-solid fa-calendar-days"></i>
                       </div>
                     </div>
 

@@ -32,9 +32,9 @@ function Blogs() {
 
       {/* Start Blog Area */}
 
-      <section class="blog-area ptb-100">
-        <div class="container-fluid">
-          <div class="section-title">
+      <section className="blog-area ptb-100">
+        <div className="container-fluid">
+          <div className="section-title">
             <span>News</span>
             <h2>Our Latest News</h2>
             <p>
@@ -44,124 +44,124 @@ function Blogs() {
             </p>
           </div>
 
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-item">
-                <div class="image">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-item">
+                <div className="image">
                   <Link to="/blogdetails">
                     <img src="src\assets\images\news1.jpg" alt="image" />
                   </Link>
 
-                  <Link to="/blogdetails" class="date">
+                  <Link to="/blogdetails" className="date">
                     20 April, 2024
                   </Link>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   <h3>
                     <Link to="/blogdetails">
                       Telehealth Is Here To Stay. In Your Facility Ready?
                     </Link>
                   </h3>
 
-                  <Link to="/blogdetails" class="blog-btn">
+                  <Link to="/blogdetails" className="blog-btn">
                     Read More +
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-item">
-                <div class="image">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-item">
+                <div className="image">
                   <Link to="/blogdetails">
                     <img src="src\assets\images\news2.jpg" alt="image" />
                   </Link>
 
-                  <Link to="/blogdetails" class="date">
+                  <Link to="/blogdetails" className="date">
                     20 April, 2024
                   </Link>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   <h3>
                     <Link to="/blogdetails">
                       Coronavirus stimulus checks: What you need to know
                     </Link>
                   </h3>
 
-                  <Link to="/blogdetails" class="blog-btn">
+                  <Link to="/blogdetails" className="blog-btn">
                     Read More +
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-item">
-                <div class="image">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-item">
+                <div className="image">
                   <Link to="single-blog.html">
                     <img src="src\assets\images\news3.jpg" alt="image" />
                   </Link>
 
-                  <Link to="/blogdetails" class="date">
+                  <Link to="/blogdetails" className="date">
                     20 April, 2024
                   </Link>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   <h3>
                     <Link to="/blogdetails">
                       People worldwide adjust to new life amid COVID-19
                     </Link>
                   </h3>
 
-                  <Link to="/blogdetails" class="blog-btn">
+                  <Link to="/blogdetails" className="blog-btn">
                     Read More +
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-item">
-                <div class="image">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-item">
+                <div className="image">
                   <Link to="/blogdetails">
                     <img src="src\assets\images\image7.jpg" alt="image" />
                   </Link>
 
-                  <Link to="/blogdetails" class="date">
+                  <Link to="/blogdetails" className="date">
                     20 April, 2024
                   </Link>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   <h3>
                     <Link to="/blogdetails">
                       New Africa coronavirus crisis looms with internal spread
                     </Link>
                   </h3>
 
-                  <Link to="/blogdetails" class="blog-btn">
+                  <Link to="/blogdetails" className="blog-btn">
                     Read More +
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-item">
-                <div class="image">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-item">
+                <div className="image">
                   <Link to="/blogdetails">
                     <img src="src\assets\images\image5.jpg" alt="image" />
                   </Link>
 
-                  <Link to="/blogdetails" class="date">
+                  <Link to="/blogdetails" className="date">
                     20 April, 2024
                   </Link>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   <h3>
                     <Link to="/blogdetails">
                       Spain death toll up by almost 400 as cases rise around the
@@ -169,58 +169,58 @@ function Blogs() {
                     </Link>
                   </h3>
 
-                  <Link to="/blogdetails" class="blog-btn">
+                  <Link to="/blogdetails" className="blog-btn">
                     Read More +
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-item">
-                <div class="image">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-item">
+                <div className="image">
                   <Link to="/blogdetails">
                     <img src="src\assets\images\image6.jpg" alt="image" />
                   </Link>
 
-                  <Link to="/blogdetails" class="date">
+                  <Link to="/blogdetails" className="date">
                     20 April, 2024
                   </Link>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   <h3>
                     <Link to="/blogdetails">
                       Can a face mask protect me from coronavirus-2024?
                     </Link>
                   </h3>
 
-                  <Link to="/blogdetails" class="blog-btn">
+                  <Link to="/blogdetails" className="blog-btn">
                     Read More +
                   </Link>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-12 col-md-12">
-              <div class="pagination-area">
-                <Link to="#" class="prev page-numbers">
-                  <i class="fa fa-chevron-left"></i>
+            <div className="col-lg-12 col-md-12">
+              <div className="pagination-area">
+                <Link to="#" className="prev page-numbers">
+                  <i className="fa fa-chevron-left"></i>
                 </Link>
-                <Link to="#" class="page-numbers">
+                <Link to="#" className="page-numbers">
                   1
                 </Link>
-                <span class="page-numbers current" aria-current="page">
+                <span className="page-numbers current" aria-current="page">
                   2
                 </span>
-                <Link to="#" class="page-numbers">
+                <Link to="#" className="page-numbers">
                   3
                 </Link>
-                <Link to="#" class="page-numbers">
+                <Link to="#" className="page-numbers">
                   4
                 </Link>
-                <Link to="#" class="next page-numbers">
-                  <i class="fa fa-chevron-right"></i>
+                <Link to="#" className="next page-numbers">
+                  <i className="fa fa-chevron-right"></i>
                 </Link>
               </div>
             </div>

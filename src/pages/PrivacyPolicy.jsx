@@ -30,21 +30,21 @@ function PrivacyPolicy() {
       </div>
       {/* End Page Title Area */}
       {/* Start Privacy Policy Area  */}
-      <section class="conditions-area ptb-100">
-        <div class="container">
-          <div class="privacy-image">
+      <section className="conditions-area ptb-100">
+        <div className="container">
+          <div className="privacy-image">
             <img src="src\assets\images\privacy.jpg" alt="image" />
 
             <a
               href="https://www.youtube.com/watch?v=cOT6DjgER2Y"
-              class="video-btn popup-youtube"
+              className="video-btn popup-youtube"
             >
-              <i class="fas fa-play"></i>
+              <i className="fas fa-play"></i>
             </a>
           </div>
 
-          <div class="single-privacy">
-            <h3 class="mt-0">Welcome to Tinzer Privacy Policy</h3>
+          <div className="single-privacy">
+            <h3 className="mt-0">Welcome to Tinzer Privacy Policy</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
