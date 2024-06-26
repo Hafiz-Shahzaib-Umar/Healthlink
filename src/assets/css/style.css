@@ -2249,8 +2249,9 @@ Sign In CSS
   color: #ffffff;
 }
 .sign-in-form form span {
-  display: block;
   color: #777777;
+  display: flex;
+  justify-content: center;
 }
 .sign-in-form form span a {
   color: #207ef7;

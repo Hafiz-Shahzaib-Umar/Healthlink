@@ -1,9 +1,66 @@
-import React from "react";
-// import "./SignIn.css";
+import { useState, useContext } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../config.js";
+import { toast } from "react-toastify";
+import { authContext } from "../context/authContext.jsx";
+// import HashLoader from "react-spinners/HashLoader";
 
 function SignIn() {
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const navigate = useNavigate();
+
+  const { dispatch } = useContext(authContext);
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const submitHandler = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    try {
+      const res = await fetch(`${BASE_URL}/auth/login`, {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+
+      if (!res.ok) {
+        throw new Error(result.message);
+      }
+
+      dispatch({
+        type: "LOGIN_SUCCESS",
+        payload: {
+          user: result.data,
+          token: result.token,
+          role: result.role,
+        },
+      });
+
+      console.log(ressult, "Login Data");
+
+      setLoading(false);
+
+      toast.success(result.message);
+
+      navigate("/");
+    } catch (err) {
+      toast.error(err.message);
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       {/* Start Header Area */}
@@ -40,14 +97,18 @@ function SignIn() {
               <p>Please Sign In to your account.</p>
             </div>
 
-            <form>
+            <form onSubmit={submitHandler}>
               <div className="row justify-content-center">
                 <div className="col-lg-12">
                   <div className="form-group">
                     <input
                       type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       className="form-control"
-                      placeholder="Email"
+                      required
                     />
                   </div>
                 </div>
@@ -56,26 +117,16 @@ function SignIn() {
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control"
                       placeholder="Password"
+                      name="password"
+                      value={formData.password}
+                      onChange={handleInputChange}
+                      className="form-control"
+                      required
                     />
                   </div>
                 </div>
-
-                <div className="col-lg-12">
-                  <div className="form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="checkme"
-                    />
-                    <label className="form-check-label" for="checkme">
-                      Keep me Log In
-                    </label>
-                  </div>
-                </div>
-
-                <div className="col-lg-12 text-right">
+                <div className="col-lg-12 text-right mt-4">
                   <p className="forgot-password">
                     <a href="single-events.html">Forgot Password?</a>
                   </p>
@@ -83,14 +134,27 @@ function SignIn() {
 
                 <div className="col-lg-12">
                   <div className="send-btn">
-                    <a href="#" className="default-btn">
+                    <button
+                      type="submit"
+                      disabled={loading && true}
+                      className="btn btn-primary btn-lg btn-block"
+                    >
                       Log In Now
+                      {/* {loading ? (
+                        <HashLoader
+                          size={30}
+                          className="loader"
+                          color="#ffffff"
+                        />
+                      ) : (
+                        "Sign Up Now"
+                      )} */}
                       <span></span>
-                    </a>
+                    </button>
                   </div>
                   <br />
                   <span>
-                    Don't have account? <a href="sign-up.html">Signup!</a>
+                    Already a registered user? <a href="sign-in.html">Login!</a>
                   </span>
                 </div>
               </div>

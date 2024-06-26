@@ -1,8 +1,8 @@
-import { useState, CSSProperties } from "react";
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../config";
+import { BASE_URL } from "../config.js";
 import { toast } from "react-toastify";
 // import HashLoader from "react-spinners/HashLoader";
 
@@ -12,7 +12,7 @@ function SignUp() {
     name: "",
     email: "",
     password: "",
-    role: "",
+    role: "patient",
     gender: "",
   });
 
@@ -22,16 +22,14 @@ function SignUp() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const submitHandler = async (e) => {
-    e.preventDefault();
-    console.log(formData);
+  const submitHandler = async (event) => {
+    event.preventDefault();
     setLoading(true);
-
     try {
       const res = await fetch(`${BASE_URL}/auth/register`, {
-        method: "POST",
+        method: "post",
         headers: {
-          Content_Type: "application/json",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -46,7 +44,7 @@ function SignUp() {
 
       toast.success(message);
 
-      navigate("/sign-in");
+      navigate("/signin");
     } catch (err) {
       toast.error(err.message);
       setLoading(false);
@@ -150,14 +148,15 @@ function SignUp() {
                       onChange={handleInputChange}
                     >
                       <option value="">Gender</option>
-                      <option value="patient">Male</option>
-                      <option value="doctor">Female</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
                     </select>
                   </div>
                 </div>
 
                 <div className="col-lg-12">
-                  <div className="send-btn btn btn-block">
+                  <div className="send-btn">
                     <button
                       type="submit"
                       disabled={loading && true}
