@@ -2323,11 +2323,16 @@ Sign Up CSS
   color: #ffffff;
 }
 .signup-form form span {
-  display: block;
   color: #666666;
+  display: flex;
+  justify-content: center;
 }
 .signup-form form span a {
   color: #207ef7;
+}
+.signup-form form .loader {
+ display: flex;
+ justify-content: center;
 }
 
 /*================================================

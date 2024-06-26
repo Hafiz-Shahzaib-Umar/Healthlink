@@ -1,9 +1,58 @@
-import React from "react";
-// import "./SignUp.css";
+import { useState, CSSProperties } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../config";
+import { toast } from "react-toastify";
+// import HashLoader from "react-spinners/HashLoader";
 
 function SignUp() {
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    role: "",
+    gender: "",
+  });
+
+  const navigate = useNavigate();
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+    setLoading(true);
+
+    try {
+      const res = await fetch(`${BASE_URL}/auth/register`, {
+        method: "POST",
+        headers: {
+          Content_Type: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const { message } = await res.json();
+
+      if (!res.ok) {
+        throw new Error(message);
+      }
+
+      setLoading(false);
+
+      toast.success(message);
+
+      navigate("/sign-in");
+    } catch (err) {
+      toast.error(err.message);
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       {/* Start Header Area */}
@@ -36,14 +85,18 @@ function SignUp() {
         <div className="container">
           <div className="signup-form">
             <h3>Create your Account</h3>
-            <form>
+            <form onSubmit={submitHandler}>
               <div className="row justify-content-center">
                 <div className="col-lg-12">
                   <div className="form-group">
                     <input
                       type="text"
+                      placeholder="Full Name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       className="form-control"
-                      placeholder="Username"
+                      required
                     />
                   </div>
                 </div>
@@ -52,8 +105,12 @@ function SignUp() {
                   <div className="form-group">
                     <input
                       type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       className="form-control"
-                      placeholder="Email"
+                      required
                     />
                   </div>
                 </div>
@@ -62,47 +119,62 @@ function SignUp() {
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control"
                       placeholder="Password"
+                      name="password"
+                      value={formData.password}
+                      onChange={handleInputChange}
+                      className="form-control"
+                      required
                     />
                   </div>
                 </div>
                 <div className="col-lg-12">
                   <div className="form-group">
-                    <select style={{ display: "none" }}>
-                      <option value="Patient">Patient</option>
-                      <option value="Doctor">Doctor</option>
+                    <select
+                      className="form-control"
+                      name="role"
+                      value={formData.role}
+                      onChange={handleInputChange}
+                    >
+                      <option value="patient">Patient</option>
+                      <option value="doctor">Doctor</option>
                     </select>
-
-                    <div className="nice-select" tabindex="0">
-                      <span className="current">Select Category</span>
-                      <ul className="list">
-                        <li className="option selected">Patient</li>
-                        <li className="option">Doctor</li>
-                      </ul>
-                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-12">
+                  <div className="form-group">
+                    <select
+                      className="form-control"
+                      name="gender"
+                      value={formData.gender}
+                      onChange={handleInputChange}
+                    >
+                      <option value="">Gender</option>
+                      <option value="patient">Male</option>
+                      <option value="doctor">Female</option>
+                    </select>
                   </div>
                 </div>
 
                 <div className="col-lg-12">
-                  <div className="form-check">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="checkme"
-                    />
-                    <label className="form-check-label" for="checkme">
-                      Keep Me Sign Up
-                    </label>
-                  </div>
-                </div>
-
-                <div className="col-lg-12">
-                  <div className="send-btn">
-                    <a href="#" className="default-btn">
+                  <div className="send-btn btn btn-block">
+                    <button
+                      type="submit"
+                      disabled={loading && true}
+                      className="btn btn-primary btn-lg btn-block"
+                    >
                       Sign Up Now
+                      {/* {loading ? (
+                        <HashLoader
+                          size={30}
+                          className="loader"
+                          color="#ffffff"
+                        />
+                      ) : (
+                        "Sign Up Now"
+                      )} */}
                       <span></span>
-                    </a>
+                    </button>
                   </div>
                   <br />
                   <span>
