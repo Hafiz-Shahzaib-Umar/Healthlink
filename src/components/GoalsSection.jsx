@@ -17,7 +17,7 @@ function GoalsSection() {
               <div className="goal-content-item">
                 <div className="item-content">
                   <span>Goal</span>
-                  <h3>The Telehealth Goals</h3>
+                  <h3>The Healthlink Goals</h3>
                   <p>
                     Many healthcare systems around the world together with
                     government agencies and startup companies are building and

@@ -96,7 +96,7 @@ function Header() {
                   />
                 </Link>
                 <button
-                  className="navbar-toggler"
+                  class="navbar-toggler"
                   type="button"
                   data-toggle="collapse"
                   data-target="#navbarSupportedContent"
@@ -104,7 +104,7 @@ function Header() {
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span className="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div

@@ -38,10 +38,10 @@ function Home() {
                     </p>
 
                     <div className="banner-btn">
-                      <a href="appointment.html" className="default-btn">
+                      <Link to="/appointment" className="default-btn">
                         Make An Appointment
                         <span></span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
