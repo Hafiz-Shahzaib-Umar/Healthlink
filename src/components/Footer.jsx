@@ -9,7 +9,7 @@ function Footer() {
           <div className="row justify-content-center">
             <div className="col-lg-3 col-sm-6">
               <div className="single-footer-widget">
-                <h3>Tinzer</h3>
+                <h3>Healthlink</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore aliqua.
@@ -104,6 +104,9 @@ function Footer() {
                   </li>
 
                   <li>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
+                  </li>
+                  <li>
                     <Link to="/faq">FAQ's</Link>
                   </li>
                 </ul>
@@ -169,12 +172,6 @@ function Footer() {
             </Link>
           </p>
         </div>
-      </div>
-
-      {/* Go To Top Area */}
-      <div className="go-top active">
-        <i className="fa fa-chevron-up"></i>
-        <i className="fa fa-chevron-up"></i>
       </div>
     </>
   );

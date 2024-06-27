@@ -43,24 +43,6 @@
   .top-header .top-social li:last-child {
     margin-bottom: 0;
   }
-  .mean-container a.meanmenu-reveal {
-    padding: 6px 0 0 0;
-  }
-  .mean-container a.meanmenu-reveal span {
-    display: block;
-    background: #000;
-    height: 4px;
-    margin-top: -5px;
-    border-radius: 3px;
-    position: relative;
-    top: 8px;
-  }
-  .mean-container .mean-bar {
-    background-color: unset;
-  }
-  .mean-container .mean-nav {
-    margin-top: 52px;
-  }
   .main-banner {
     height: 100%;
     padding-top: 110px;

@@ -18,7 +18,7 @@ function Services() {
 
           <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6">
-              <div className="services-item-two bg">
+              <div className="services-item-two">
                 <div className="icon">
                   <i className="fa fa-bacteria"></i>
                 </div>

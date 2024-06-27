@@ -1,44 +1,26 @@
-import React from "react";
-// import "./AppointmentSection.css";
+import { useState } from "react";
 
 function AppointmentSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    speciality: "Select Category",
+    doctor: "Select Doctor",
+    gender: "Gender",
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const submitHandler = async (event) => {
+    event.preventDefault();
+    console.log(formData);
+  };
+
   return (
     <>
-      {/* <section className="step-one pt-100 pb-70">
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-6">
-              <div className="step-one-image">
-                <img src="src\assets\images\step-one-image.jpg" alt="image" />
-              </div>
-            </div>
-
-            <div className="col-lg-6">
-              <div className="step-one-content">
-                <h3>Book an appointment that’s convenient for you.</h3>
-                <p>
-                  Many healthcare systems around the world together with
-                  government agencies and startup companies are building and
-                  delivering Telehealth
-                </p>
-                <b>
-                  No matter where you are or how busy your life gets, you can
-                  talk to one of our many friendly and knowledgable doctors
-                  online at a time that works with your schedule.
-                </b>
-
-                <div className="step-btn">
-                  <a href="appointment.html" className="default-btn">
-                    Make Appointment
-                    <span style={{ top: "-1.35938px", left: "66.5px" }}></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="appointment-area ptb-100">
         <div className="container-fluid">
           <div className="row align-items-center justify-content-center">
@@ -233,15 +215,18 @@ function AppointmentSection() {
                   <span>Call to Action</span>
                   <h3>Make An Appointment</h3>
                 </div>
-                <form>
+                <form onSubmit={submitHandler}>
                   <div className="row justify-content-center">
                     <div className="col-lg-6 col-sm-6">
                       <div className="form-group">
                         <input
                           type="text"
                           className="form-control"
-                          id="Name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
                           placeholder="Enter Your Name"
+                          required
                         />
                         <i className="fa-solid fa-user"></i>
                       </div>
@@ -250,10 +235,13 @@ function AppointmentSection() {
                     <div className="col-lg-6 col-sm-6">
                       <div className="form-group">
                         <input
-                          type="text"
+                          type="email"
                           className="form-control"
-                          id="Email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
                           placeholder="Enter Email"
+                          required
                         />
                         <i className="fa-solid fa-envelope"></i>
                       </div>
@@ -264,88 +252,82 @@ function AppointmentSection() {
                         <input
                           type="text"
                           className="form-control"
-                          id="Phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleInputChange}
                           placeholder="Enter Phone Number"
+                          required
                         />
                         <i className="fa-solid fa-phone"></i>
                       </div>
                     </div>
-
                     <div className="col-lg-6 col-sm-6">
                       <div className="form-group">
-                        <select style={{ display: "none" }}>
-                          <option value="">Select Category</option>
-                          <option value="">Cardiologists</option>
-                          <option value="">Dermatologists</option>
-                          <option value="">Endocrinologists</option>
-                          <option value="">Gastroenterologists</option>
-                          <option value="">Allergists</option>
-                          <option value="">Immunologists</option>
+                        <select
+                          style={{ display: "none" }}
+                          value={formData.speciality}
+                          onChange={handleInputChange}
+                          name="speciality"
+                        >
+                          <option value="Select Category">
+                            Select Category
+                          </option>
+                          <option value="cardiologists">Cardiologists</option>
+                          <option value="dermatologists">Dermatologists</option>
+                          <option value="endocrinologists">
+                            Endocrinologists
+                          </option>
+                          <option value="gastroenterologists">
+                            Gastroenterologists
+                          </option>
+                          <option value="allergists">Allergists</option>
+                          <option value="immunologists">Immunologists</option>
                         </select>
                         <div className="nice-select" tabIndex="0">
                           <span className="current">Select Category</span>
                           <ul className="list">
-                            <li data-value="" className="option selected">
-                              Select Category
-                            </li>
-                            <li data-value="" className="option">
-                              Cardiologists
-                            </li>
-                            <li data-value="" className="option">
-                              Dermatologists
-                            </li>
-                            <li data-value="" className="option">
-                              Endocrinologists
-                            </li>
-                            <li data-value="" className="option">
-                              Gastroenterologists
-                            </li>
-                            <li data-value="" className="option">
-                              Allergists
-                            </li>
-                            <li data-value="" className="option">
-                              Immunologists
-                            </li>
+                            <li className="option selected">Select Category</li>
+                            <li className="option">Cardiologists</li>
+                            <li className="option">Dermatologists</li>
+                            <li className="option">Endocrinologists</li>
+                            <li className="option">Gastroenterologists</li>
+                            <li className="option">Allergists</li>
+                            <li className="option">Immunologists</li>
                           </ul>
                         </div>
                       </div>
                     </div>
-
                     <div className="col-lg-6 col-sm-6">
                       <div className="form-group">
                         <select style={{ display: "none" }}>
-                          <option value="">Select Doctor</option>
-                          <option value="">Dr. James Adult</option>
-                          <option value="">Dr. James Alison</option>
-                          <option value="">Dr. Peter Adlock</option>
-                          <option value="">Dr. Jelin Alis</option>
-                          <option value="">Dr. Josh Taylor</option>
-                          <option value="">Dr. Steven Smith</option>
+                          <option value="Select Doctor">Select Doctor</option>
+                          <option value="Dr. James Adult">
+                            Dr. James Adult
+                          </option>
+                          <option value="Dr. James Alison">
+                            Dr. James Alison
+                          </option>
+                          <option value="Dr. Peter Adlock">
+                            Dr. Peter Adlock
+                          </option>
+                          <option value="Dr. Jelin Alis">Dr. Jelin Alis</option>
+                          <option value="Dr. Josh Taylor">
+                            Dr. Josh Taylor
+                          </option>
+                          <option value="Dr. Steven Smith">
+                            Dr. Steven Smith
+                          </option>
                         </select>
                         <div className="nice-select" tabIndex="0">
                           <span className="current">Select Doctor</span>
                           <ul className="list">
-                            <li data-value="" className="option selected">
-                              Select Doctor
-                            </li>
-                            <li data-value="" className="option">
-                              Dr. James Adult
-                            </li>
-                            <li data-value="" className="option">
-                              Dr. James Alison
-                            </li>
-                            <li data-value="" className="option">
-                              Dr. Peter Adlock
-                            </li>
-                            <li data-value="" className="option">
-                              Dr. Jelin Alis
-                            </li>
-                            <li data-value="" className="option">
-                              Dr. Josh Taylor
-                            </li>
-                            <li data-value="" className="option">
-                              Dr. Steven Smith
-                            </li>
+                            <li className="option selected">Select Doctor</li>
+                            <li className="option">Dr. James Adult</li>
+                            <li className="option">Dr. James Alison</li>
+                            <li className="option">Dr. Peter Adlock</li>
+                            <li className="option">Dr. Jelin Alis</li>
+                            <li className="option">Dr. Josh Taylor</li>
+                            <li className="option">Dr. Steven Smith</li>
                           </ul>
                         </div>
                       </div>
@@ -353,16 +335,26 @@ function AppointmentSection() {
 
                     <div className="col-lg-6 col-sm-6">
                       <div className="form-group">
-                        <div className="input-group date" id="datetimepicker">
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Date"
-                            style={{ borderRadius: "50px" }}
-                          />
-                          <span className="input-group-addon"></span>
+                        <select
+                          style={{ display: "none" }}
+                          value={formData.gender}
+                          name="gender"
+                          onChange={handleInputChange}
+                        >
+                          <option value="gender">Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <div className="nice-select" tabIndex="0">
+                          <span className="current">Gender</span>
+                          <ul className="list">
+                            <li className="option selected">Gender</li>
+                            <li className="option">Male</li>
+                            <li className="option">Female</li>
+                            <li className="option">Other</li>
+                          </ul>
                         </div>
-                        <i className="fa-solid fa-calendar-days"></i>
                       </div>
                     </div>
 

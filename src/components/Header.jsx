@@ -84,7 +84,7 @@ function Header() {
         </div>
 
         {/* Start Navbar Area */}
-        <div className="navbar-area is-sticky">
+        <div className="navbar-area">
           <div className="main-navbar">
             <div className="container-fluid">
               <nav className="navbar navbar-expand-lg navbar-light">

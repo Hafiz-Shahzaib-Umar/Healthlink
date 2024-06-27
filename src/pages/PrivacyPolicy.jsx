@@ -34,13 +34,6 @@ function PrivacyPolicy() {
         <div className="container">
           <div className="privacy-image">
             <img src="src\assets\images\privacy.jpg" alt="image" />
-
-            <a
-              href="https://www.youtube.com/watch?v=cOT6DjgER2Y"
-              className="video-btn popup-youtube"
-            >
-              <i className="fas fa-play"></i>
-            </a>
           </div>
 
           <div className="single-privacy">

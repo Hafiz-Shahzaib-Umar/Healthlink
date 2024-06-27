@@ -1,10 +1,8 @@
 import React from "react";
-// import "./TestimonialSection.css";
 
 function TestimonialSection() {
   return (
     <>
-      {" "}
       <section className="testimonials-area pt-100 pb-70">
         <div className="container-fluid">
           <div className="row  align-items-center justify-content-center">
@@ -40,7 +38,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\2.jpg" alt="image" />
                             <h4>Alex Maxwell</h4>
-                            <p>Web Designer</p>
                           </div>
                         </div>
                       </div>
@@ -66,7 +63,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\3.jpg" alt="image" />
                             <h4>Steven Smith</h4>
-                            <p>Web Developer</p>
                           </div>
                         </div>
                       </div>
@@ -89,7 +85,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\1.jpg" alt="image" />
                             <h4>Alison Jack</h4>
-                            <p>Web Developer</p>
                           </div>
                         </div>
                       </div>
@@ -112,7 +107,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\2.jpg" alt="image" />
                             <h4>Alex Maxwell</h4>
-                            <p>Web Designer</p>
                           </div>
                         </div>
                       </div>
@@ -138,7 +132,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\3.jpg" alt="image" />
                             <h4>Steven Smith</h4>
-                            <p>Web Developer</p>
                           </div>
                         </div>
                       </div>
@@ -164,7 +157,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\1.jpg" alt="image" />
                             <h4>Alison Jack</h4>
-                            <p>Web Developer</p>
                           </div>
                         </div>
                       </div>
@@ -190,7 +182,6 @@ function TestimonialSection() {
                           <div className="info">
                             <img src="src\assets\images\2.jpg" alt="image" />
                             <h4>Alex Maxwell</h4>
-                            <p>Web Designer</p>
                           </div>
                         </div>
                       </div>

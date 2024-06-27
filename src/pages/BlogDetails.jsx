@@ -117,7 +117,7 @@ function BlogDetails() {
 
                 <div className="quote">
                   <p>
-                    <i className="flaticon-left-quote"></i>
+                    <i className="fa-solid fa-quote-left"></i>
                     I’m as proud of many of the things we haven’t done as the
                     things we have done.
                   </p>
@@ -339,7 +339,7 @@ function BlogDetails() {
                         <textarea
                           name="comment"
                           id="comment"
-                          cols="45"
+                          cols="80"
                           rows="5"
                           maxlength="65525"
                           required="required"
@@ -423,34 +423,24 @@ function BlogDetails() {
 
                   <ul className="list">
                     <li>
-                      <a href="blog-details.html">
-                        Orthopeadic
-                        <i className="fa fa-chevron-right"></i>
-                      </a>
+                      Orthopeadic
+                      <i className="fa fa-chevron-right"></i>
                     </li>
                     <li>
-                      <a href="blog-details.html">
-                        Diabetic Test
-                        <i className="fa fa-chevron-right"></i>
-                      </a>
+                      Diabetic Test
+                      <i className="fa fa-chevron-right"></i>
                     </li>
                     <li>
-                      <a href="blog-details.html">
-                        Behaviour health
-                        <i className="fa fa-chevron-right"></i>
-                      </a>
+                      Behaviour health
+                      <i className="fa fa-chevron-right"></i>
                     </li>
                     <li>
-                      <a href="blog-details.html">
-                        COVID-Test
-                        <i className="fa fa-chevron-right"></i>
-                      </a>
+                      COVID-Test
+                      <i className="fa fa-chevron-right"></i>
                     </li>
                     <li>
-                      <a href="blog-details.html">
-                        Live Video
-                        <i className="fa fa-chevron-right"></i>
-                      </a>
+                      Live Video
+                      <i className="fa fa-chevron-right"></i>
                     </li>
                   </ul>
                 </section>
@@ -458,41 +448,37 @@ function BlogDetails() {
                 <section className="widget widget_tinzer_posts_thumb">
                   <h3 className="widget-title">Recent Posts</h3>
                   <article className="item">
-                    <a href="blog-details.html" className="thumb">
+                    <a href="#" className="thumb">
                       <span className="fullimage cover bg1" role="img"></span>
                     </a>
                     <div className="info">
                       <time className="2024-06-30">30 January</time>
                       <h4 className="title usmall">
-                        <a href="blog-details.html">
-                          Ensure at the Hygenic office
-                        </a>
+                        <a href="index.html">Ensure at the Hygenic office</a>
                       </h4>
                     </div>
                   </article>
 
                   <article className="item">
-                    <a href="blog-details.html" className="thumb">
+                    <a href="#" className="thumb">
                       <span className="fullimage cover bg2" role="img"></span>
                     </a>
                     <div className="info">
                       <time className="2024-06-30">17 May</time>
                       <h4 className="title usmall">
-                        <a href="blog-details.html">
-                          Aliqua tuatorn grate hjyrdre
-                        </a>
+                        <a href="index.html">Aliqua tuatorn grate hjyrdre</a>
                       </h4>
                     </div>
                   </article>
 
                   <article className="item">
-                    <a href="blog-details.html" className="thumb">
+                    <a href="#" className="thumb">
                       <span className="fullimage cover bg3" role="img"></span>
                     </a>
                     <div className="info">
                       <time className="2024-06-30">18 March</time>
                       <h4 className="title usmall">
-                        <a href="blog-details.html">How to protect from Germ</a>
+                        <a href="index.html">How to protect from Germ</a>
                       </h4>
                     </div>
                   </article>
